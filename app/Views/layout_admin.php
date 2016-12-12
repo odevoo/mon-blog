@@ -11,6 +11,7 @@
 	<div class="container">
 		<header>
 			<h1>W :: <?= $this->e($title) ?></h1>
+			<a href="<?= $this->url('admin_traitementDeconnexion'); ?>">Déconnexion</a>
 		</header>
 
 		<section>

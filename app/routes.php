@@ -22,8 +22,16 @@
 
 		/* Admin */
 		['GET', '/admin', 'Admin#index', 'admin_index'],
+
 		['GET', '/admin/ajoutPage', 'Admin#ajoutPage', 'admin_ajoutPage'],
 		['POST', '/admin/ajoutPage', 'Admin#ajoutPageBdd', 'admin_ajoutPageBdd'],
+
+		// créer une page connection
+		['GET', '/admin/connexion', 'Admin#connexion', 'admin_connexion'],
+		['POST', '/admin/connexion', 'Admin#traitementConnexion', 'admin_traitementConnexion'],
+
+		//deconnexion
+		['GET', '/admin/deconnexion', 'Admin#traitementDeconnexion', 'admin_traitementDeconnexion'],
 
 		/* Pages */
 		['GET', '/page/[:slug]', 'Default#affichePage', 'default_affichePage']

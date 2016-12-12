@@ -27,6 +27,7 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-12 text-center">
+			<h2><?php echo $page->getData('Mon_Gros_titre'); ?></h2>
 				<p> <?php echo $presentation; ?></p>
 				<p> <?php echo $competences; ?></p>
 			</div>

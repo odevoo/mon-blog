@@ -20,10 +20,10 @@ class EquipeController extends Controller
 		$page = new PagesModel;
 		$page->getPageByUserId($equipier['id']);
 		//var_dump($page);
-		$url = 'equipe/' . $page->getSlug();
+		$url = 'equipe/' . $page->getData('template');
 
 		$this->show($url, ['id' => $equipier['id'], 
-												'page' => $page, 
+												'page' => $page,
 												'presentation' => $page->getData('presentation'),
 												'competences' => $page->getData('competences')] );
 	}
